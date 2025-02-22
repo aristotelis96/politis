@@ -6,7 +6,8 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
+  site: "https://aristotelis96.github.io/politis/",
+  base: "/politis",
   integrations: [tailwind(), mdx(), sitemap(), icon()],
   output: "static",
   outDir: "docs",
