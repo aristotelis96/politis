@@ -1,13 +1,13 @@
 ---
 import { Picture } from "astro:assets";
-import logoImage from "assets/logo.webp";
+import logoImage from "assets/pol-logo.jpg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block w-2/3">
+  <div class="py-6 md:order-1 hidden md:block w-fit">
     <Picture
       src={logoImage}
       alt="Astronaut in the air"
@@ -15,7 +15,7 @@ import { Icon } from "astro-icon/components";
       sizes="(max-width: 600px) 100vw, 500px"
       loading="eager"
       format="avif"
-      class={`rounded-lg `}
+      class={`rounded-lg object-fill `}
     />
   </div>
   <div>

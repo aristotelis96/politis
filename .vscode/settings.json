@@ -1,4 +1,5 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.language": "en,el"
+  "cSpell.language": "en,el",
+  "cSpell.words": ["Sectionhead"]
 }
