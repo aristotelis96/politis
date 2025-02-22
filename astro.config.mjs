@@ -10,7 +10,6 @@ export default defineConfig({
   base: "/politis",
   integrations: [tailwind(), mdx(), sitemap(), icon()],
   output: "static",
-  outDir: "docs",
   build: {
     assets: "astro",
   },
