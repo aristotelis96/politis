@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
-  <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="50.000000pt" height="50.000000pt" viewBox="0 0 50.000000 50.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M80 250 l0 -220 45 0 45 0 0 70 0 70 63 0 c121 0 193 64 184 163 -5
+57 -30 95 -78 119 -26 14 -59 18 -146 18 l-113 0 0 -220z m225 125 c33 -32 33
+-78 0 -110 -20 -21 -34 -25 -80 -25 l-55 0 0 80 0 80 55 0 c46 0 60 -4 80 -25z"/>
+</g>
 </svg>
