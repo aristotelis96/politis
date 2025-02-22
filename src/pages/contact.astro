@@ -1,6 +1,7 @@
 ---
 import Contactform from "@components/contactform.astro";
 import Container from "@components/container.astro";
+import Map from "@components/map.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
@@ -14,7 +15,7 @@ import { Icon } from "astro-icon/components";
     </Sectionhead>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
-      <div>
+      <div class="flex flex-col gap-6 w-full">
         <h2 class="font-medium text-2xl text-gray-800">
           Επικοινωνήστε μαζί μας
         </h2>
@@ -22,7 +23,7 @@ import { Icon } from "astro-icon/components";
           Έχετε κάτι να πείτε; Είμαστε εδώ για να βοηθήσουμε. Συμπληρώστε τη
           φόρμα ή στείλτε email ή καλέστε μας.
         </p>
-        <div class="mt-5">
+        <div class="">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
             <span>Γοργύρας, Neo Karlovasi 832 00, Greece</span>
@@ -36,6 +37,9 @@ import { Icon } from "astro-icon/components";
               href="tel:+30 22730 79999">+30 22730 79999</a
             >
           </div>
+        </div>
+        <div class="w-full overflow-hidden">
+          <Map />
         </div>
       </div>
       <div>
