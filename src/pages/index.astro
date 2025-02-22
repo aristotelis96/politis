@@ -1,0 +1,35 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Features from "@components/features.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="">
+  <Container>
+    <Hero />
+    <Features />
+    <!-- <Logos /> -->
+    <!-- <Cta /> -->
+  </Container>
+</Layout>
+
+<style>
+  :global(html) {
+    /* ...TRUNCATED */
+
+    color: hsl(
+      var(--colour-text-hue) var(--colour-text-saturation)
+        var(--colour-text-luminance)
+    );
+
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) {
+      scroll-behavior: auto;
+    }
+  }
+</style>
