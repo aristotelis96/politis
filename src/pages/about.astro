@@ -21,11 +21,11 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       <Fragment slot="desc">Σχετικά με εμάς</Fragment>
     </Sectionhead>
 
-    <div class="flex flex-col items-center gap-8 md:gap-20 mt-20">
-      <div class="flex flex-col md:flex-row gap-8 md:gap-40 items-center">
-        <div class="flex flex-col gap-4 w-full">
+    <div class="mt-20 flex flex-col items-center gap-8 md:gap-20">
+      <div class="flex flex-col items-center gap-8 md:flex-row md:gap-40">
+        <div class="flex w-full flex-col gap-4">
           <Picture
-            class="h-[400px] w-full md:w-[300px] object-cover"
+            class="h-[400px] w-full object-cover md:w-[300px]"
             src={officeImage}
             alt="Office"
           />
@@ -34,13 +34,13 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             από τον μηχανολόγο μηχανικό Δημήτριο Πολίτη.
           </p>
         </div>
-        <div class="flex flex-col gap-4 w-full">
+        <div class="flex w-full flex-col gap-4">
           <p>
             Το γραφείο μας παρέχει εξειδικευμένες υπηρεσίες στον σχεδιασμό , τη
             μελέτη , την αδειοδότηση και την επίβλεψη τεχνικών έργων.
           </p>
           <Picture
-            class="h-[400px] w-full md:w-[300px] object-cover"
+            class="h-[400px] w-full object-cover md:w-[300px]"
             src={genericImage}
             alt="night office"
           />
@@ -48,7 +48,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       </div>
 
       <Picture
-        class="h-[600px] w-full md:w-[600px] object-cover"
+        class="h-[600px] w-full object-cover md:w-[600px]"
         src={nightOfficeImage}
         alt="generic image"
       />

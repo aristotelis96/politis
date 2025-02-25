@@ -6,7 +6,7 @@ import officeNightImage from "assets/office-night.jpg";
 ---
 
 <div
-  class="w-full flex-col md:flex-row flex items-center md:justify-between gap-8 h-fit py-20 md:px-40">
+  class="flex h-fit w-full flex-col items-center gap-8 py-20 md:flex-row md:justify-between md:px-40">
   <div class="w-full md:w-1/2">
     <Picture
       src={officeImage}
@@ -17,7 +17,7 @@ import officeNightImage from "assets/office-night.jpg";
       class="w-full rounded transition"
     />
   </div>
-  <div class="flex-col flex gap-8 flex-1 overflow-clip w-full">
+  <div class="flex w-full flex-1 flex-col gap-8 overflow-clip">
     <div class="w-full">
       <Picture
         src={polKarta}
@@ -35,7 +35,7 @@ import officeNightImage from "assets/office-night.jpg";
         sizes="(max-width: 800px) 100vw, 400px"
         width={800}
         height={800}
-        class="w-full rounded transition object-fill"
+        class="w-full rounded object-fill transition"
       />
     </div>
   </div>

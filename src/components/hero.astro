@@ -5,24 +5,24 @@ import backgroundImage from "assets/index-background.jpg";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center px-4 pt-16 h-[80%] overflow-hidden rounded md:rounded-none md:h-[80vh] pb-12 mb-8 md:pt-12 md:pb-36 bg-cover md:bg-fixed bg-center bg-no-repeat"
+  class="mb-8 grid h-[80%] place-items-center overflow-hidden rounded bg-cover bg-center bg-no-repeat px-4 pb-12 pt-16 md:h-[80vh] md:rounded-none md:bg-fixed md:pb-36 md:pt-12 lg:grid-cols-2"
   style=`background-image:url('${backgroundImage.src}');`>
   <div>
-    <div class="bg-gray-50/90 p-4 rounded-md">
+    <div class="rounded-md bg-gray-50/90 p-4">
       <h1
-        class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter">
+        class="text-3xl font-bold lg:text-4xl lg:tracking-tight xl:text-5xl xl:tracking-tighter">
         Δημήτριος Πολίτης<br /> Μηχανολόγος Μηχανικός
       </h1>
-      <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      <p class="mt-4 max-w-xl text-lg text-slate-600">
         Καλώς ήρθατε! Εξειδικευμένες υπηρεσίες με έμφαση στην καινοτομία, την
         ποιότητα και την αξιοπιστία.
       </p>
     </div>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <div class="mt-6 flex flex-col gap-3 sm:flex-row">
       <Link
         href="#features"
-        class="flex gap-1 items-center justify-center scroll-smooth">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-book-open" />
+        class="flex items-center justify-center gap-1 scroll-smooth">
+        <Icon class="h-5 w-5 text-white" name="bx:bxs-book-open" />
         Υπηρεσίες
       </Link>
     </div>
