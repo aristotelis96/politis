@@ -2,7 +2,7 @@
 draft: false
 name: "Δημήτριος Πολίτης"
 title: "Μηχανολόγος Μηχανικός"
-avatar: { src: "/politis/dim-pol.png", alt: "Dimitris Politis" }
+avatar: { src: "/dim-pol.png", alt: "Dimitris Politis" }
 publishDate: "2022-11-07 15:39"
 ---
 
