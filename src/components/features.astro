@@ -5,63 +5,84 @@ const features = [
   {
     title: "Μηχανολογικές Μελέτες",
     description:
-      "Σχεδιασμός και εκπόνηση μηχανολογικών μελετών για διάφορα έργα.",
-    icon: "bx:bxs-briefcase",
+      "Αναλυτικότερα, το γραφείο μας αναλαμβάνει τις παρακάτω κατηγορίες μελετών Η/Μ συστημάτων:",
+    icon: "bx:bxs-cog",
+    subcategories: [
+      "Ενεργειακές Μελέτες (ΚΕΝΑΚ)",
+      "Μελέτες ύδρευσης / αποχέτευσης",
+      "Συστήματα κλιματισμού (θέρμανση, ψύξη)",
+      "Μελέτες Ηλεκτρολογικών",
+      "Μελέτες πυρασφάλειας",
+    ],
   },
   {
-    title: "Πιστοποιητικά Ενεργειακής Απόδοσης",
+    title: "Πιστοποιητικά Ενεργειακής Απόδοσης (ΠΕΑ)",
     description:
-      "Έκδοση πιστοποιητικών ενεργειακής απόδοσης για κτίρια και εγκαταστάσεις.",
+      "Διενέργεια ενεργειακών επιθεωρήσεων για κατοικίες και τριτογενή τομέα.",
     icon: "bx:bxs-certification",
   },
   {
     title: "Άδειες Λειτουργίας",
     description:
-      "Διεκπεραίωση διαδικασιών για την έκδοση αδειών λειτουργίας επιχειρήσεων.",
-    icon: "bx:bxs-file",
+      "Διεκπεραίωση διαδικασιών για την έκδοση αδειών λειτουργίας κάθε είδους επιχείρησης, εξασφαλίζοντας τη συμμόρφωση με τη νομοθεσία και την ταχύτερη δυνατή έγκριση.",
+    icon: "bx:bxs-file-doc",
   },
   {
     title: "Ηλεκτρονικές Ταυτότητες Κτηρίων",
-    description: "Καταγραφή και έκδοση ηλεκτρονικών ταυτοτήτων κτηρίων.",
-    icon: "bx:bxs-building",
+    description:
+      "Σύνταξη και καταχώρηση ηλεκτρονικής ταυτότητας κτηρίου (ΗΤΚ), διασφαλίζοντας ότι το ακίνητο σας συμμορφώνεται με τη νομοθεσία και είναι πλήρως καταγεγραμμένο στο πληροφοριακό σύστημα του ΤΕΕ.",
+    icon: "bx:bxs-building-house",
   },
   {
-    title: "Ενεργειακές Επιθεωρήσεις",
+    title: "Κτηματολόγιο – Ολοκληρωμένες Υπηρεσίες",
     description:
-      "Διενέργεια ενεργειακών επιθεωρήσεων για κατοικίες και επαγγελματικούς χώρους.",
-    icon: "bx:bxs-analyse",
+      "Αναλαμβάνουμε όλη τη διαδικασία καταχώρησης σας στο Εθνικό κτηματολόγιο, εξασφαλίζοντας την ορθή καταγραφή και την προστασία των δικαιωμάτων σας.",
+    icon: "bx:bxs-map",
   },
   {
     title: "Τεχνικές Συμβουλευτικές Υπηρεσίες",
     description:
       "Παροχή συμβουλευτικών υπηρεσιών σε τεχνικά και κατασκευαστικά έργα.",
-    icon: "bx:bxs-conversation",
+    icon: "bx:bxs-help-circle",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0" id={"features"}>
-  <h2 class="text-3xl lg:text-4xl font-bold lg:tracking-tight">
-    Όλα όσα χρειάζεστε για τις υπηρεσίες μηχανολόγου μηχανικού
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Παρέχουμε ολοκληρωμένες λύσεις μηχανολογίας, συνδυάζοντας τις καλύτερες
-    τεχνολογίες και καινοτομίες για την επίτευξη των στόχων σας.
-  </p>
-</div>
+<div class={"flex flex-col items-center"}>
+  <div class={"max-w-screen-xl "}>
+    <div class="mt-16 md:mt-0" id={"features"}>
+      <h2 class="text-3xl lg:text-4xl font-bold lg:tracking-tight">
+        Όλα όσα χρειάζεστε για τις υπηρεσίες μηχανολόγου μηχανικού
+      </h2>
+      <p class="text-lg mt-4 text-slate-600">
+        Παρέχουμε ολοκληρωμένες λύσεις μηχανολογίας, συνδυάζοντας τις καλύτερες
+        τεχνολογίες και καινοτομίες για την επίτευξη των στόχων σας.
+      </p>
+    </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+      {
+        features.map((item) => (
+          <div class="flex gap-4 items-start">
+            <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+              <Icon class="text-white" name={item.icon} />
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+              <p class="text-slate-500 mt-2 leading-relaxed">
+                {item.description}
+              </p>
+              {item.subcategories && (
+                <ul class="text-slate-500 ml-6 list-disc leading-relaxed">
+                  {item.subcategories.map((subcategory) => (
+                    <li>{subcategory}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
 </div>

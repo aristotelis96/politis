@@ -1,10 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 import { Picture } from "astro:assets";
-import logoImage from "assets/dim-pol.png";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import officeImage from "@assets/office.jpg";
+import nightOfficeImage from "@assets/office-night.jpg";
+import genericImage from "@assets/backgrounds/4.webp";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -12,36 +14,44 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
-<Layout title="Βιογραφικό">
-  <Container>
+<Layout title="Προφίλ">
+  <Container class={"max-w-screen-lg"}>
     <Sectionhead>
-      <Fragment slot="title">Βιογραφικό</Fragment>
-      <Fragment slot="desc">Προφίλ & Επαγγελματική Εμπειρία</Fragment>
+      <Fragment slot="title">Προφίλ</Fragment>
+      <Fragment slot="desc">Σχετικά με εμάς</Fragment>
     </Sectionhead>
 
-    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
-      {
-        publishedTeamMembers.map(async (teamMemberEntry) => {
-          const { Content } = await teamMemberEntry.render();
-          return (
-            <div class=" flex flex-col gap-4 md:flex-row ">
-              <div class="mx-auto prose md:order-1 order-2 prose-lg mt-6 max-w-3xl">
-                <Content />
-              </div>
-              <div class="md:w-1/3 w-full md:order-1 aspect-square">
-                <Picture
-                  src={logoImage}
-                  alt={teamMemberEntry.data.avatar.alt}
-                  sizes="(max-width: 800px) 100vw, 400px"
-                  width={400}
-                  height={400}
-                  class="w-full rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
-                />
-              </div>
-            </div>
-          );
-        })
-      }
+    <div class="flex flex-col items-center gap-8 md:gap-20 mt-20">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-40 items-center">
+        <div class="flex flex-col gap-4 w-full">
+          <Picture
+            class="h-[400px] w-full md:w-[300px] object-cover"
+            src={officeImage}
+            alt="Office"
+          />
+          <p>
+            Το μηχανολογικό γραφείο συστήθηκε το 2024 στο Καρλόβασι της Σάμου
+            από τον μηχανολόγο μηχανικό Δημήτριο Πολίτη.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 w-full">
+          <p>
+            Το γραφείο μας παρέχει εξειδικευμένες υπηρεσίες στον σχεδιασμό , τη
+            μελέτη , την αδειοδότηση και την επίβλεψη τεχνικών έργων.
+          </p>
+          <Picture
+            class="h-[400px] w-full md:w-[300px] object-cover"
+            src={genericImage}
+            alt="night office"
+          />
+        </div>
+      </div>
+
+      <Picture
+        class="h-[600px] w-full md:w-[600px] object-cover"
+        src={nightOfficeImage}
+        alt="generic image"
+      />
     </div>
   </Container>
 </Layout>

@@ -3,6 +3,8 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Picture from "astro/components/Picture.astro";
+import navLogo from "@assets/nav-logo.png";
 
 const menuitems: {
   title: string;
@@ -19,7 +21,7 @@ const menuitems: {
     path: "/politis/#features",
   },
   {
-    title: "Βιογραφικό",
+    title: "Προφίλ",
     path: "/politis/about",
   },
   {
@@ -30,13 +32,19 @@ const menuitems: {
 ---
 
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+  <header
+    class="flex flex-col lg:flex-row justify-between items-center my-5 mx-5 md:mx-20">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/politis" class="text-lg"
-          ><span class="font-bold text-slate-800">D</span><span
+        <a href="/politis" class="text-lg">
+          <!-- <span class="font-bold text-slate-800">D</span><span
             class="text-slate-500">Politis</span
-          >
+          > -->
+          <Picture
+            src={navLogo}
+            class={"h-[40px] w-fit aspect-auto flex"}
+            alt="nav logo"
+          />
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
