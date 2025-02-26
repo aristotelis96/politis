@@ -19,8 +19,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Δ. Πολίτης"
-  : "Δ. Πολίτης - Μηχανολόγος Μηχανικός";
+  ? title + " | " + "Δ. Πολίτης | Εξειδικευμένες Μηχανολογικές Υπηρεσίες"
+  : "Δ. Πολίτης - Μηχανολόγος Μηχανικός | Μηχανολογικές Υπηρεσίες";
 ---
 
 <!doctype html>
@@ -34,7 +34,7 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Δημήτριος Πολίτης - Μηχανολόγος Μηχανικός"
+      description="Υπηρεσίες μηχανολόγου μηχανικού με έμφαση στην καινοτομία, ποιότητα & αξιοπιστία. Ενεργειακές μελέτες, άδειες, ηλεκτρονικές ταυτότητες & άλλα."
       canonical={canonicalURL}
       openGraph={{
         basic: {
